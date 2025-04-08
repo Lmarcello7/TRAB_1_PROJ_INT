@@ -6,9 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>To-do List</title>
 	<link rel="stylesheet" href="style/style.css">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap3-dialog@1.35.4/dist/css/bootstrap-dialog.min.css">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/gh/GedMarc/bootstrap4-dialog/dist/css/bootstrap-dialog.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="style/style.css">
 </head>
 
 <body>
@@ -56,24 +57,10 @@
 		</div>
 	</div>
 	<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap3-dialog@1.35.4/dist/js/bootstrap-dialog.min.js"></script>
-	<script>
-		$(document).ready(function() {
-			$('#btnCadastro').click(function() {
-				BootstrapDialog.show({
-					title: 'Olá!',
-					message: 'Este é um modal criado com Bootstrap Dialog.',
-					buttons: [{
-						label: 'Fechar',
-						action: function(dialogRef) {
-							dialogRef.close();
-						}
-					}]
-				});
-			});
-		});
-	</script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/GedMarc/bootstrap4-dialog/dist/js/bootstrap-dialog.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>

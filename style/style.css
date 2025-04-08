@@ -8,3 +8,13 @@ body {
 .card-tarefa { 
     cursor: pointer;
 }
+
+/* REMOVE ESTILIZACAO PADRAO DA MODAL */
+.modal-header {
+    background-color: white !important;
+    color: black;
+}
+
+#modalCadAtv {
+    max-width: 90%;
+}
