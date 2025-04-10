@@ -4,6 +4,8 @@ body {
     box-sizing: border-box;
 }
 
+input[type="chekcbox"] { cursor: pointer; }
+
 /* DEIXA OS CHECKBOX COM CURSOR DE ACAO */
 .card-tarefa { 
     cursor: pointer;
@@ -15,6 +17,6 @@ body {
     color: black;
 }
 
-#modalCadAtv {
-    max-width: 90%;
+#modalCadAtv .modal-dialog {
+    max-width: 65% !important;
 }
