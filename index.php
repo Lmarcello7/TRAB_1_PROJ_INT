@@ -13,45 +13,52 @@
 </head>
 
 <body>
+	<!-- Loader -->
+	<div id="loader" class="loader-overlay d-none">
+		<div class="loader-content text-center">
+			<i class="fa fa-spinner fa-spin fa-3x text-primary"></i>
+			<p class="mt-2 text-white">Carregando...</p>
+		</div>
+	</div>
 	<div class="container-fluid mt-3">
 		<div class="card">
-			<h5 class="card-header text-center">To-do List</h5>
-			<div class="card-body">
+			<div class="card-header">
 				<div class="row">
-					<div class="col-12">
-						<button type="button" id="btnCadastro" class="btn btn-sm alert-success"><i class="fa fa-plus-square-o"></i> Criar nova tarefa</button>
+					<div class="col-3"></div>
+					<div class="col-6 text-center">
+						<h5>To-do List</h5>
+					</div>
+					<div class="col-1"></div>
+					<div class="col-2 text-right">
+						<button type="button" id="btnCadastro" class="btn btn-sm alert-success">
+							<i class="fa fa-plus-square-o"></i> Criar nova tarefa
+						</button>
 					</div>
 				</div>
-				<div class="row mt-2">
+			</div>
+			<div class="card-body">
+				<div class="row mt-2 d-flex justify-content-around">
 					<!-- TAREFAS EM ANDAMENTO -->
 					<div class="col-5">
 						<div class="card">
-							<h5 class="card-header">Tarefas em andamento <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
-							<div class="card-body d-flex justify-content-center">
-								<div class="card-tarefa card d-inline-block w-75">
-									<div class="card-body">
-										<h5 class="card-title"><input type="checkbox" name="finTask" id="finTask" title="Finalizar Tarefa"> Titulo tarefa</h5>
-										<h6>Descrição da tarefa</h6>
-									</div>
+							<h5 class="card-header">Tarefas Pendentes <i class="fa fa-angle-down" pointer aria-hidden="true"></i></h5>
+							<div class="card-body d-flex justify-content-center corpo-tarefa" id="tarefasPend">
+								<div class="alert alert-danger text-center" id="alertPend">
+									<i class="fa fa-info-circle"></i> Nenhuma tarefa Pendente!
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-2"></div>
-					<!-- TAREFAS CONCLUIDAS -->
-					<!-- <div class="col-5">
+					<div class="col-5">
 						<div class="card">
-							<h5 class="card-header">Tarefas em Finalizadas <i class="fa fa-angle-down" aria-hidden="true"></i></h5>
-							<div class="card-body">
-								<div class="card-tarefa card w-75">
-									<div class="card-body">
-										<h5 class="card-title"><input type="checkbox" name="finTask" id="finTask" title="Finalizar Tarefa"> Titulo tarefa</h5>
-										<h6>Descrição da tarefa</h6>
-									</div>
+							<h5 class="card-header">Tarefas Concluídas <i class="fa fa-angle-down" pointer aria-hidden="true"></i></h5>
+							<div class="card-body d-flex justify-content-center corpo-tarefa" id="tarefasFin">
+								<div class="alert alert-danger text-center" id="alertFin">
+									<i class="fa fa-info-circle"></i> Nenhuma tarefa Finalizada!
 								</div>
 							</div>
 						</div>
-					</div> -->
+					</div>
 				</div>
 			</div>
 		</div>
